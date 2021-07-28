@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="page-heading">
+    <h1>Streamify</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolores laborum ex, ullam soluta perferendis voluptas assumenda nostrum illo magni reiciendis ratione ipsum ducimus ea omnis molestiae. Excepturi, repellat quae.
+    </p>
+
+  </div>
+
+  <img src="assets/images/abstractbg4.jpg" id="background" />
+  <audio src="assets/music/Beggar/Beggar featuring Bradosanz(HQ).wav" id="song">
+  </audio>
+  
+  <div class="container">
+    
+
+    <div class="box"></div>
+
+    <img class="play-bg" src="assets/images/abstractbg3.jpg" id="thumbnail" />
+
+    <img class="btn_img" src="assets/images/icons/play.svg" onclick="playPause()" id="play-pause" />
+
+    <img class="btn_img" src="assets/images/icons/skip(forward).svg" onclick="nextSong()" id="next-song" />
+
+    <img class="btn_img" src="assets/images/icons/skip(backward).svg" onclick="previousSong()" id="previous-song" />
+
+    <div class="song-artist">Bradosanz & AIG</div>
+
+    <div class="song-title">Beggar</div>
+    <!-- Input element for progress bar - min=0 starting value of  
+    every song - max length will change per song so leave empty -->
+    <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+
+    <div class="currentTime"></div>
+    <div class="durationTime"></div>
+  </div>
+
+  <footer class="footer">
+    <h3><a href="https://aigrecords.github.io/AIGrecords/">GMediaSec2021&#169;</a></h3>
+  </footer>
+</body>
+
+</html>
